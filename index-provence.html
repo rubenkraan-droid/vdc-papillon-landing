@@ -208,6 +208,12 @@
   .vw-badge{font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:rgba(0,0,0,.18);padding:4px 9px;border-radius:999px}
   .vw-txt{flex:1 1 260px}
   .vw-link{font-weight:800;text-decoration:underline;white-space:nowrap}
+
+  /* Praktische gegevens 17 oktober */
+  .vw-info{display:grid;grid-template-columns:1fr;gap:12px;margin-top:24px}
+  @media(min-width:700px){.vw-info{grid-template-columns:repeat(3,1fr)}}
+  .vw-info>div{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:16px 18px;font-size:.95rem;line-height:1.5}
+  .vw-info-k{display:block;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 </style>
 </head>
 <body>
@@ -225,7 +231,7 @@
   <div class="vw-banner">
     <div class="container vw-inner">
       <span class="vw-badge">17 oktober</span>
-      <span class="vw-txt"><strong>Zaterdag 17 oktober, Van der Valk Leusden.</strong> Overweegt u Frankrijk? Zie de woningen, de kansen en de fiscale kant.</span>
+      <span class="vw-txt"><strong>Zaterdag 17 oktober, Van der Valk Leusden.</strong> Sessies om 11:00, 14:00 en 16:00. Zie de woningen, de kansen en de fiscale kant.</span>
       <a class="vw-link" href="#aanvragen">Aanmelden</a>
     </div>
   </div>
@@ -241,7 +247,7 @@
     <p class="sub">Twee nieuwbouwwoningen Papillon met dalzicht op Village des Cigales. Op eigen grond, volledig verhuurd via FranceComfort, en via het belastingverdrag vrijgesteld van Nederlandse box 3-belasting. Zonder verhuurzorgen, zonder erfpacht, zonder gedoe. Overweegt u Frankrijk? Op zaterdag 17 oktober laten wij bij Van der Valk in Leusden de woningen zien, de kansen die er liggen en hoe het fiscaal uitpakt.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#aanvragen">Meld u aan voor 17 oktober</a>
-      <p class="risk light">Gratis en vrijblijvend. Zaterdag 17 oktober, Van der Valk Leusden.</p>
+      <p class="risk light">Gratis en vrijblijvend. Zaterdag 17 oktober, Van der Valk Leusden. Sessies om 11:00, 14:00 en 16:00.</p>
       <a class="btn btn-secondary" href="#aanvragen">Of vraag alleen de brochure aan</a>
       <p class="risk light">Direct in uw mailbox, met alle cijfers en plattegronden.</p>
     </div>
@@ -379,7 +385,7 @@
     <h2>Van 17 oktober naar uw eerste uitkering, in vier stappen</h2>
     <p class="lead">U hoeft niet naar Frankrijk om te beslissen. Alles gebeurt in het Nederlands, en het begint op 17 oktober in Leusden.</p>
     <div class="steps">
-      <div class="step"><span class="time">Zaterdag 17 oktober</span><h3>Informatiedag in Leusden</h3><p>Bij Van der Valk laten wij de woningen zien, de kansen die er liggen en precies hoe het fiscaal uitpakt.</p></div>
+      <div class="step"><span class="time">Zaterdag 17 oktober</span><h3>Informatiedag in Leusden</h3><p>Bij Van der Valk, Philipsstraat 18. U kiest een sessie om 11:00, 14:00 of 16:00. Wij laten de woningen zien, de kansen die er liggen en hoe het fiscaal uitpakt.</p></div>
       <div class="step"><span class="time">Binnen 2 werkdagen</span><h3>Dossier en rekenvoorbeeld</h3><p>U ontvangt het informatiedossier met de contracttekst van de 7%-garantie en een berekening voor uw eigen situatie.</p></div>
       <div class="step"><span class="time">Op uw tempo</span><h3>Reservering en notaris</h3><p>U reserveert kavel 10 of 11. De Franse notaris en RFN accountants begeleiden u in het Nederlands, jaar 1 inbegrepen.</p></div>
       <!-- BRON: fiscale begeleiding RFN accountants jaar 1 inbegrepen (french-dream.html). -->
@@ -400,7 +406,11 @@
     <p class="eyebrow">Zaterdag 17 oktober</p>
     <h2 style="color:#fff">Denkt u erover om in Frankrijk te investeren? Dan is 17 oktober uw moment</h2>
     <p class="lead" style="color:rgba(255,255,255,.88)">Bij Van der Valk in Leusden laten wij zien wat zo'n investering werkelijk inhoudt: de woningen zelf, de kansen die er nu liggen, en precies hoe het fiscaal uitpakt. Geen verkooppraatje, maar een compleet beeld, zodat u zelf kunt beoordelen of dit bij u past.</p>
-    <!-- BEWIJS NODIG: begin- en eindtijd, exact adres van Van der Valk Leusden, en of het ook op zondag 18 oktober doorloopt. -->
+    <div class="vw-info">
+      <div><span class="vw-info-k">Waar</span><strong>Van der Valk Leusden</strong><br>Philipsstraat 18, 3833 LC Leusden</div>
+      <div><span class="vw-info-k">Wanneer</span><strong>Zaterdag 17 oktober</strong><br>Drie sessies: 11:00, 14:00 en 16:00</div>
+      <div><span class="vw-info-k">Kosten</span><strong>Gratis</strong><br>U kiest bij aanmelding uw sessie</div>
+    </div>
     <ul class="fac" style="margin-top:22px">
       <li>De woningen: Papillon 10 en 11, de plattegronden en de ligging met dalzicht</li>
       <li>De kansen: wat er nu beschikbaar is en de 7% netto die vijf jaar vaststaat</li>
@@ -410,7 +420,7 @@
     </ul>
     <div style="margin-top:26px">
       <a class="btn btn-primary btn-wide" href="#aanvragen">Meld u aan voor 17 oktober</a>
-      <p class="risk light">Gratis en vrijblijvend. Van der Valk Leusden. U hoeft niets mee te nemen en u beslist die dag niets.</p>
+      <p class="risk light">Gratis en vrijblijvend. U kiest zelf of u om 11:00, 14:00 of 16:00 komt, en u beslist die dag niets.</p>
     </div>
   </div>
 </section>
@@ -478,7 +488,7 @@
     <p class="eyebrow">Vragen die investeerders ons stellen</p>
     <h2>De acht vragen die in elk gesprek langskomen, eerlijk beantwoord</h2>
     <div style="margin-top:22px">
-      <details><summary>Wat kan ik verwachten op 17 oktober in Leusden?</summary><p>U bent welkom bij Van der Valk in Leusden. Overweegt u een investering in Frankrijk, dan krijgt u daar een compleet beeld: wij laten de woningen zien met de plattegronden en de ligging, we bespreken welke kansen er nu liggen, en we leggen precies uit hoe het fiscaal uitpakt, van de Franse belasting op uw huur tot uw Nederlandse box 3. Het is gratis en vrijblijvend, en u beslist die dag niets.</p></details>
+      <details><summary>Wat kan ik verwachten op 17 oktober in Leusden?</summary><p>U bent welkom bij Van der Valk in Leusden, Philipsstraat 18, met sessies om 11:00, 14:00 en 16:00. Overweegt u een investering in Frankrijk, dan krijgt u daar een compleet beeld: wij laten de woningen zien met de plattegronden en de ligging, we bespreken welke kansen er nu liggen, en we leggen precies uit hoe het fiscaal uitpakt, van de Franse belasting op uw huur tot uw Nederlandse box 3. Het is gratis en vrijblijvend, en u beslist die dag niets.</p></details>
       <details><summary>Is die 7% echt gegarandeerd, en door wie?</summary><p>Ja. Maison Pure garandeert 7% netto per jaar, na parkkosten en verhuurcommissie, voor vijf jaar, op kavel 10 en kavel 11. De garantie staat in uw koopovereenkomst. U ontvangt de tekst vóór het tekenen. Franse inkomstenbelasting over de huur is voor uw rekening en valt buiten de garantie.</p></details>
       <details><summary>Betaal ik in Nederland box 3 over deze woning?</summary><p>U geeft de woning aan in uw Nederlandse aangifte, maar Nederland stelt haar vrij via het belastingverdrag met Frankrijk. Per saldo betaalt u er in Nederland geen box 3-belasting over. De waarde telt wel mee voor de vermogenstoets van toeslagen.</p></details>
       <!-- BRON: verdrag NL-FR art. 24, vrijstellingsmethode; nuance toeslagen (BDO, Jongbloed). -->
@@ -521,19 +531,19 @@
       <div class="form-card">
         <span class="badge">17 oktober</span>
         <h3>Meld u aan voor 17 oktober</h3>
-        <p class="sub">Zaterdag 17 oktober bij Van der Valk in Leusden. Zie de woningen, de kansen die er liggen en hoe het fiscaal uitpakt. Gratis en vrijblijvend.</p>
+        <p class="sub">Zaterdag 17 oktober bij Van der Valk in Leusden, Philipsstraat 18. Kies zelf of u om 11:00, 14:00 of 16:00 komt. Zie de woningen, de kansen en hoe het fiscaal uitpakt.</p>
         <div class="placeholder">
           [GHL FORM EMBED: "Aanmelding 17 oktober, Van der Valk Leusden"]
           <!--
             GHL: formulier hier plaatsen.
-            Velden: voornaam, achternaam, e-mail, telefoon, met hoeveel personen komt u.
+            Velden: voornaam, achternaam, e-mail, telefoon, welke sessie (11:00 / 14:00 / 16:00), met hoeveel personen komt u.
             Tag: vdc-papillon-17okt. Pipeline: Frankrijk > Informatiedag 17 okt.
           -->
         </div>
         <div class="after">
           <strong>Wat er gebeurt nadat u zich aanmeldt</strong>
           <ol>
-            <li>U ontvangt een bevestiging met het adres van Van der Valk Leusden en de tijden.</li>
+            <li>U ontvangt een bevestiging met het adres en de sessie die u gekozen heeft.</li>
             <li>Wij nemen kort vooraf contact op, zodat we weten waar u vragen over heeft.</li>
             <li>Op 17 oktober nemen we alles rustig met u door.</li>
           </ol>
