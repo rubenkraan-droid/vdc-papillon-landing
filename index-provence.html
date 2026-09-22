@@ -184,7 +184,7 @@
   .cta-final .container{position:relative;z-index:2}
   .cta-final h2{color:#fff}
   .forms{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
-  @media(min-width:900px){.forms{grid-template-columns:1.15fr 1fr}}
+  @media(min-width:1000px){.forms{grid-template-columns:repeat(3,1fr)}}
   .form-card{background:#fff;color:var(--text);border-radius:14px;padding:24px}
   .form-card h3{color:var(--green)}
   .form-card .sub{color:var(--muted);font-size:.94rem;margin-bottom:14px}
@@ -201,6 +201,13 @@
   footer h4{color:#fff;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
   footer a{color:rgba(255,255,255,.8);text-decoration:none}
   footer .legal{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:.76rem;color:rgba(255,255,255,.6);line-height:1.5}
+
+  /* Verkoopweekend-banner */
+  .vw-banner{background:var(--gold);color:var(--text)}
+  .vw-inner{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding-top:10px;padding-bottom:10px;font-size:.92rem}
+  .vw-badge{font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:rgba(0,0,0,.18);padding:4px 9px;border-radius:999px}
+  .vw-txt{flex:1 1 260px}
+  .vw-link{font-weight:800;text-decoration:underline;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -210,9 +217,18 @@
   <a href="#top" aria-label="Maison Pure"><img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e23869c9b37b5fde7c8b9.png" alt="Maison Pure"></a>
   <div class="nav-cta">
     <a class="nav-phone" href="tel:+31853032842">+31 85 303 28 42</a>
-    <a class="btn btn-primary" href="#gesprek">Plan een Zoom-gesprek</a>
+    <a class="btn btn-primary" href="#gesprek">Plan een gesprek</a>
   </div>
 </nav>
+
+  <!-- SECTIE: Verkoopweekend-banner | VARIABELE: tijdsverloop (concrete datum, dichtbij) -->
+  <div class="vw-banner">
+    <div class="container vw-inner">
+      <span class="vw-badge">Verkoopweekend</span>
+      <span class="vw-txt"><strong>Zaterdag 17 oktober, Leusden.</strong> Bekijk Papillon 10 en 11 en stel al uw vragen, zonder naar Frankrijk te hoeven.</span>
+      <a class="vw-link" href="#aanvragen">Aanmelden</a>
+    </div>
+  </div>
 
 <!-- SECTIE: Above the fold | VARIABELE: droomuitkomst + kans van slagen + tijdsverloop + moeite/risico -->
 <section class="hero" id="top">
@@ -222,12 +238,12 @@
     <p class="eyebrow">Village des Cigales · Lot · Maison Pure</p>
     <h1>Uw geld werkt harder in Frankrijk: 7% netto per jaar, 5 jaar gegarandeerd.</h1>
     <!-- BRON 7%: toezegging Ruben van der Kraan (Maison Pure), 16-9-2026: 7% netto per jaar, 5 jaar, gegarandeerd door Maison Pure, na parkkosten en verhuurcommissie, geldig op kavel 10 en 11. BEWIJS NODIG: exacte contracttekst van de garantie (aanbieder, looptijd, uitkeringsmoment, voorwaarden) om de formulering 1-op-1 te matchen. -->
-    <p class="sub">Twee nieuwbouwwoningen Papillon met dalzicht op Village des Cigales. Op eigen grond, volledig verhuurd via FranceComfort, en via het belastingverdrag vrijgesteld van Nederlandse box 3-belasting. Zonder verhuurzorgen, zonder erfpacht, zonder bezoek: het eerste gesprek is een Zoom-call van 30 minuten.</p>
+    <p class="sub">Twee nieuwbouwwoningen Papillon met dalzicht op Village des Cigales. Op eigen grond, volledig verhuurd via FranceComfort, en via het belastingverdrag vrijgesteld van Nederlandse box 3-belasting. Zonder verhuurzorgen, zonder erfpacht, zonder gedoe: het eerste gesprek is een telefoongesprek van 30 minuten.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#gesprek">Plan een Zoom-gesprek van 30 minuten</a>
-      <p class="risk light">Vrijblijvend en zonder verplichting. U kiest zelf het moment. Wij bellen via Zoom, u hoeft nergens naartoe.</p>
+      <a class="btn btn-primary" href="#gesprek">Plan een telefonisch gesprek van 30 minuten</a>
+      <p class="risk light">Vrijblijvend en zonder verplichting. U kiest zelf een moment, wij bellen u dan gewoon op.</p>
       <a class="btn btn-secondary" href="#brochure">Vraag eerst de brochure aan</a>
-      <p class="risk light">Direct in uw mailbox. Wij bellen alleen als u dat zelf aanvinkt.</p>
+      <p class="risk light">Direct in uw mailbox, met alle cijfers en plattegronden.</p>
     </div>
     <div class="proof-strip" aria-label="Kerncijfers">
       <div class="proof-item"><strong>7% netto</strong><span>5 jaar gegarandeerd door Maison Pure</span></div>
@@ -360,10 +376,10 @@
 <section class="section" id="hoe">
   <div class="container">
     <p class="eyebrow">Zo werkt het</p>
-    <h2>Van een Zoom-gesprek van 30 minuten naar uw eerste uitkering, in vier stappen</h2>
-    <p class="lead">U hoeft niet naar Frankrijk om te beslissen. Alles gebeurt op afstand en in het Nederlands. Bezoeken mag, hoeft niet.</p>
+    <h2>Van een gesprek van 30 minuten naar uw eerste uitkering, in vier stappen</h2>
+    <p class="lead">U hoeft niet naar Frankrijk om te beslissen. Alles gebeurt in het Nederlands, telefonisch of persoonlijk op het verkoopweekend.</p>
     <div class="steps">
-      <div class="step"><span class="time">30 minuten, deze week</span><h3>Zoom-gesprek</h3><p>U kiest een moment. We bespreken uw situatie, de twee kavels en de garantie. Geen verkooppraatje, wel eerlijke cijfers.</p></div>
+      <div class="step"><span class="time">30 minuten, deze week</span><h3>Telefonisch gesprek</h3><p>U kiest een moment. We bespreken uw situatie, de twee kavels en de garantie. Geen verkooppraatje, wel eerlijke cijfers.</p></div>
       <div class="step"><span class="time">Binnen 2 werkdagen</span><h3>Dossier en rekenvoorbeeld</h3><p>U ontvangt het informatiedossier met de contracttekst van de 7%-garantie en een berekening voor uw eigen situatie.</p></div>
       <div class="step"><span class="time">Op uw tempo</span><h3>Reservering en notaris</h3><p>U reserveert kavel 10 of 11. De Franse notaris en RFN accountants begeleiden u in het Nederlands, jaar 1 inbegrepen.</p></div>
       <!-- BRON: fiscale begeleiding RFN accountants jaar 1 inbegrepen (french-dream.html). -->
@@ -371,8 +387,29 @@
       <!-- BEWIJS NODIG: indicatieve oplevertermijn en moment eerste uitkering. -->
     </div>
     <div class="center" style="margin-top:28px">
-      <a class="btn btn-primary btn-wide" href="#gesprek">Plan een Zoom-gesprek van 30 minuten</a>
+      <a class="btn btn-primary btn-wide" href="#gesprek">Plan een telefonisch gesprek van 30 minuten</a>
       <p class="risk">Vrijblijvend. U zit nergens aan vast en hoeft nergens naartoe.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTIE: Verkoopweekend | VARIABELE: moeite/risico (persoonlijk, dichtbij) + tijdsverloop (harde datum) -->
+<section class="section" id="verkoopweekend" style="background:var(--green);color:#fff">
+  <div class="container">
+    <p class="eyebrow">Verkoopweekend</p>
+    <h2 style="color:#fff">Zaterdag 17 oktober in Leusden: zie de plattegronden, hoor de cijfers, stel al uw vragen</h2>
+    <p class="lead" style="color:rgba(255,255,255,.88)">Liever iemand in de ogen kijken dan bellen? Dat kan. Op 17 oktober zijn wij in Leusden, met de plattegronden van Papillon 10 en 11, de rendementscijfers en de contracttekst van de garantie op tafel. U hoeft niet naar Frankrijk om een goed beeld te krijgen.</p>
+    <!-- BEWIJS NODIG: exacte locatie en adres in Leusden, begin- en eindtijd, en of het weekend ook op zondag 18 oktober doorloopt. -->
+    <ul class="fac" style="margin-top:22px">
+      <li>De plattegronden en ligging van kavel 10 en 11 op tafel</li>
+      <li>De rendementsgarantie van 7% netto, contracttekst inzichtelijk</li>
+      <li>Uw eigen situatie doorrekenen met Ruben</li>
+      <li>Antwoord op uw fiscale vragen over box 3 en Frankrijk</li>
+    </ul>
+    <div style="margin-top:26px">
+      <a class="btn btn-primary btn-wide" href="#aanvragen">Meld u aan voor 17 oktober</a>
+      <p class="risk light">Gratis en vrijblijvend. U zit nergens aan vast en hoeft niets mee te nemen.</p>
     </div>
   </div>
 </section>
@@ -401,7 +438,7 @@
       </table>
     </div>
     <div class="fis-note">
-      <strong>Wat dit voor u betekent.</strong> In Nederland betaalt u elk jaar over de waarde, ongeacht de opbrengst. In Frankrijk betaalt u over de huur die u werkelijk ontvangt, met een ruime forfaitaire aftrek. Bij een verhuurde woning is de jaarlijkse Franse belasting daardoor in de regel lager dan de Nederlandse box 3-heffing over dezelfde waarde. Bij verkoop binnen 22 jaar kent Frankrijk wel een winstbelasting die Nederland nu niet kent. Wij rekenen het in het Zoom-gesprek voor uw situatie door, en RFN accountants begeleidt uw eerste Franse aangifte.
+      <strong>Wat dit voor u betekent.</strong> In Nederland betaalt u elk jaar over de waarde, ongeacht de opbrengst. In Frankrijk betaalt u over de huur die u werkelijk ontvangt, met een ruime forfaitaire aftrek. Bij een verhuurde woning is de jaarlijkse Franse belasting daardoor in de regel lager dan de Nederlandse box 3-heffing over dezelfde waarde. Bij verkoop binnen 22 jaar kent Frankrijk wel een winstbelasting die Nederland nu niet kent. Wij rekenen het in het gesprek voor uw situatie door, en RFN accountants begeleidt uw eerste Franse aangifte.
       <!-- BRON conclusie: fiscaal fact sheet 16-9-2026 (Frankrijk/VDC-landing-onderzoek/02-fiscaal-factsheet.md). Bewust GEEN gecombineerd "netto na belasting"-percentage genoemd. -->
     </div>
     <p class="disclaimer">De fiscale informatie op deze pagina is algemeen van aard, gebaseerd op de Nederlandse en Franse wet- en regelgeving per september 2026, en kan wijzigen. De werkelijke belastingdruk hangt af van uw persoonlijke situatie, financiering, eigen gebruik, bezitsduur en de wijze van verhuur. Maison Pure is geen belastingadviseur; laat u vóór aankoop adviseren door een fiscalist met kennis van Nederlands én Frans belastingrecht.</p>
@@ -440,6 +477,7 @@
     <p class="eyebrow">Vragen die investeerders ons stellen</p>
     <h2>De acht vragen die in elk gesprek langskomen, eerlijk beantwoord</h2>
     <div style="margin-top:22px">
+      <details><summary>Wat kan ik verwachten van het verkoopweekend op 17 oktober?</summary><p>Op zaterdag 17 oktober zijn wij in Leusden. U ziet de plattegronden en de ligging van kavel 10 en 11, wij nemen de rendementscijfers en de contracttekst van de garantie met u door, en u kunt al uw vragen stellen. Het is gratis en vrijblijvend, en u hoeft er niets voor mee te nemen.</p></details>
       <details><summary>Is die 7% echt gegarandeerd, en door wie?</summary><p>Ja. Maison Pure garandeert 7% netto per jaar, na parkkosten en verhuurcommissie, voor vijf jaar, op kavel 10 en kavel 11. De garantie staat in uw koopovereenkomst. U ontvangt de tekst vóór het tekenen. Franse inkomstenbelasting over de huur is voor uw rekening en valt buiten de garantie.</p></details>
       <details><summary>Betaal ik in Nederland box 3 over deze woning?</summary><p>U geeft de woning aan in uw Nederlandse aangifte, maar Nederland stelt haar vrij via het belastingverdrag met Frankrijk. Per saldo betaalt u er in Nederland geen box 3-belasting over. De waarde telt wel mee voor de vermogenstoets van toeslagen.</p></details>
       <!-- BRON: verdrag NL-FR art. 24, vrijstellingsmethode; nuance toeslagen (BDO, Jongbloed). -->
@@ -450,7 +488,7 @@
       <details><summary>Mag ik er zelf ook gebruik van maken?</summary><p>Ja. Eigen gebruik is mogelijk in overleg met FranceComfort; u betaalt dan alleen de verbruikskosten. Houd er rekening mee dat Frankrijk bij eigen gebruik de taxe d'habitation voor tweede woningen kan heffen en dat eigen weken niet meetellen in de verhuuropbrengst.</p></details>
       <!-- BRON: eigen gebruik french-dream.html; THRS-regel impots.gouv.fr. -->
       <details><summary>Wat als ik na een paar jaar wil verkopen?</summary><p>Dat kan. Het huurcontract met FranceComfort gaat over op de koper, wat de woning voor de volgende eigenaar direct rendabel maakt. Frankrijk belast de verkoopwinst met 19% plus 7,5%, jaarlijks aflopend, en volledig vrijgesteld na 22 respectievelijk 30 jaar bezit. Nederland heft niet over de verkoopwinst.</p></details>
-      <details><summary>Hoe snel kan ik erin?</summary><p>Snel. Papillon 10 en 11 zijn nieuwbouw die op korte termijn opgeleverd kan worden. Na het Zoom-gesprek ontvangt u binnen twee werkdagen het dossier; reserveren en de notariële afwikkeling gaan op uw tempo, volledig in het Nederlands.</p></details>
+      <details><summary>Hoe snel kan ik erin?</summary><p>Snel. Papillon 10 en 11 zijn nieuwbouw die op korte termijn opgeleverd kan worden. Na het gesprek ontvangt u binnen twee werkdagen het dossier; reserveren en de notariële afwikkeling gaan op uw tempo, volledig in het Nederlands.</p></details>
       <!-- BEWIJS NODIG: indicatieve oplevermaand voor kavel 10 en 11. -->
       <details><summary>Ik woon in België. Geldt dit ook voor mij?</summary><p>Ja. Belgische kopers zijn welkom en worden op dezelfde manier begeleid. De Nederlandse box 3-vergelijking is voor u niet van toepassing; de Franse regels wel. Wij rekenen het voor uw Belgische situatie door in het gesprek.</p></details>
     </div>
@@ -475,29 +513,48 @@
   <div class="cta-ov"></div>
   <div class="container">
     <p class="eyebrow">De eerste stap kost u 30 minuten</p>
-    <h2>Plan uw Zoom-gesprek, of vraag eerst de brochure aan</h2>
-    <p class="lead" style="color:rgba(255,255,255,.9)">Kies wat bij u past. Een gesprek verplicht u tot niets; een brochure leidt niet tot een telefoontje, tenzij u dat zelf aanvinkt.</p>
+    <h2>Meld u aan voor 17 oktober, plan een gesprek of vraag de brochure aan</h2>
+    <p class="lead" style="color:rgba(255,255,255,.9)">Kies wat bij u past. Alles is vrijblijvend en u zit nergens aan vast.</p>
 
     <div class="forms">
+      <div class="form-card">
+        <span class="badge">17 oktober</span>
+        <h3>Meld u aan voor het verkoopweekend</h3>
+        <p class="sub">Zaterdag 17 oktober in Leusden. Bekijk de plattegronden van Papillon 10 en 11, hoor de cijfers en stel al uw vragen. Gratis en vrijblijvend.</p>
+        <div class="placeholder">
+          [GHL FORM EMBED: "Aanmelding verkoopweekend 17 oktober Leusden"]
+          <!--
+            GHL: formulier hier plaatsen.
+            Velden: voornaam, achternaam, e-mail, telefoon, met hoeveel personen komt u.
+            Tag: vdc-papillon-verkoopweekend. Pipeline: Frankrijk > Verkoopweekend 17 okt.
+          -->
+        </div>
+        <div class="after">
+          <strong>Wat er gebeurt nadat u zich aanmeldt</strong>
+          <ol>
+            <li>U ontvangt een bevestiging met het adres in Leusden en de tijden.</li>
+            <li>Wij bellen u kort vooraf, zodat we weten waar u vragen over heeft.</li>
+            <li>Op 17 oktober nemen we alles rustig met u door.</li>
+          </ol>
+        </div>
+      </div>
       <!-- FORMULIER 1: Zoom-gesprek (GHL Calendar) -->
       <div class="form-card" id="gesprek">
-        <span class="badge">Aanbevolen</span>
-        <h3>Plan een Zoom-gesprek van 30 minuten</h3>
-        <p class="sub">U kiest zelf datum en tijd. Wij bellen u via Zoom op dat moment. Vrijblijvend, in het Nederlands, zonder verkoopdruk.</p>
+        <h3>Plan een telefonisch gesprek van 30 minuten</h3>
+        <p class="sub">U kiest zelf datum en tijd, wij bellen u dan op. Vrijblijvend, in het Nederlands, zonder verkoopdruk.</p>
         <div class="placeholder">
-          [GHL CALENDAR EMBED: "Zoom-gesprek Village des Cigales"]
+          [GHL CALENDAR EMBED: "Telefonisch gesprek Village des Cigales"]
           <!--
-            GHL: Calendar-widget (Zoom-gesprek, 30 min) hier plaatsen. Sectie-ID moet "gesprek" zijn.
+            GHL: Calendar-widget (telefonisch gesprek, 30 min) hier plaatsen. Sectie-ID moet "gesprek" zijn.
             Velden bij boeking: voornaam, achternaam, e-mail, telefoon, "Interesse in kavel 10, 11 of beide?".
             Tag: vdc-papillon-gesprek. Pipeline: Frankrijk > Gesprek gepland. Bron-veld: utm_content.
-            Reden kalender i.p.v. formulier: wie een tijdslot kiest, weet dat hij gebeld wordt. Dat voorkomt
-            "verbaasde" bellers en filtert de echte gespreksaanvragen.
+            Reden kalender i.p.v. formulier: wie zelf een tijdslot kiest, weet dat hij gebeld wordt.
           -->
         </div>
         <div class="after">
           <strong>Wat er gebeurt nadat u boekt</strong>
           <ol>
-            <li>U ontvangt direct een bevestiging met de Zoom-link.</li>
+            <li>U ontvangt direct een bevestiging van de afspraak.</li>
             <li>Op het gekozen moment belt Ruben u, 30 minuten, over uw situatie en kavel 10 en 11.</li>
             <li>Binnen 2 werkdagen daarna: dossier, contracttekst van de garantie en uw rekenvoorbeeld.</li>
           </ol>
@@ -512,9 +569,9 @@
           [GHL FORM EMBED: "Brochure Village des Cigales"]
           <!--
             GHL: Formulier hier plaatsen. Sectie-ID moet "brochure" zijn.
-            Velden: e-mail (verplicht), voornaam (verplicht). GEEN telefoonveld verplicht.
-            Optioneel vinkje: "Ik wil ook graag persoonlijk advies, bel mij." Alleen bij dit vinkje: telefoonveld tonen (verplicht) en tag vdc-papillon-belverzoek + pipeline Frankrijk > Belverzoek.
-            Zonder vinkje: tag vdc-papillon-brochure, alleen mailflow, geen belactie.
+            Velden: voornaam, e-mail en telefoon.
+            Tag: vdc-papillon-brochure. Pipeline: Frankrijk > Brochure aangevraagd.
+            
             Bron-veld: utm_content.
           -->
         </div>
@@ -523,7 +580,7 @@
           <ol>
             <li>De brochure staat binnen enkele minuten in uw mailbox.</li>
             <li>U ontvangt daarna drie korte e-mails met de belangrijkste cijfers en antwoorden.</li>
-            <li>Wij bellen alleen als u het vinkje "bel mij" heeft aangezet.</li>
+            <li>Daarna nemen wij persoonlijk contact met u op om uw vragen door te nemen.</li>
           </ol>
         </div>
       </div>
