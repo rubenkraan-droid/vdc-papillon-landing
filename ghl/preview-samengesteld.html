@@ -59,7 +59,7 @@
   /* Knoppen */
   .btn{display:inline-block;padding:15px 24px;border-radius:8px;font-weight:600;text-decoration:none;text-align:center;font-size:1rem;border:2px solid transparent;transition:transform .12s ease}
   .btn:active{transform:scale(.98)}
-  .btn-primary{background:var(--gold);color:var(--text);border-color:var(--gold)}
+  .btn-primary{background:#fff;color:var(--green);border-color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.10)}
   .btn-secondary{background:transparent;color:var(--white);border-color:rgba(255,255,255,.7)}
   .btn-secondary.dark{color:var(--green);border-color:var(--green)}
   .btn-green{background:var(--green);color:var(--white);border-color:var(--green)}
@@ -206,9 +206,9 @@
   footer .legal{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:.76rem;color:rgba(255,255,255,.6);line-height:1.5}
 
   /* Verkoopweekend-banner */
-  .vw-banner{background:var(--gold);color:var(--text)}
+  .vw-banner{background:#fff;color:var(--green);border-bottom:1px solid var(--line)}
   .vw-inner{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding-top:10px;padding-bottom:10px;font-size:.92rem}
-  .vw-badge{font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:rgba(0,0,0,.18);padding:4px 9px;border-radius:999px}
+  .vw-badge{font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:var(--green);color:#fff;padding:4px 9px;border-radius:999px}
   .vw-txt{flex:1 1 260px}
   .vw-link{font-weight:800;text-decoration:underline;white-space:nowrap}
 
@@ -404,7 +404,7 @@
       <!-- BEWIJS NODIG: indicatieve oplevertermijn en moment eerste uitkering. -->
     </div>
     <div class="center" style="margin-top:28px">
-      <a class="btn btn-primary btn-wide" href="#aanvragen">Meld u aan voor 17 oktober</a>
+      <a class="btn btn-green btn-wide" href="#aanvragen">Meld u aan voor 17 oktober</a>
       <p class="risk">Gratis en vrijblijvend. U beslist die dag niets.</p>
     </div>
   </div>
@@ -546,27 +546,25 @@
           (veld voor sessiekeuze: 11:00 / 14:00 / 16:00)
        2. Formulier "Brochure aanvragen"
        3. Custom Code blok B (blok-b-footer.html)
-     Alle knoppen scrollen naar #aanvragen, de CTA-sectie hierboven.
-     Zet de GHL-rij op volle breedte en padding 0.
+     Alle knoppen scrollen naar #aanvragen. Rij op volle breedte, padding 0.
      ============================================================ -->
 
 <!-- ===== HIER KOMEN IN GHL DE TWEE NATIEVE FORMULIEREN ===== -->
 <div class="container" style="padding-top:6px;padding-bottom:10px">
   <div class="forms">
-    <div class="form-card" style="border:2px dashed var(--gold)">
+    <div class="form-card" style="border:2px dashed var(--green)">
       <span class="badge">17 oktober</span>
       <h3>Aanmelding 17 oktober</h3>
       <p class="sub">Hier plaatst u in GHL het natieve formulier. Velden: voornaam, achternaam, e-mail, telefoon, sessie (11:00 / 14:00 / 16:00) en aantal personen.</p>
       <div class="placeholder">GHL-formulier 1</div>
     </div>
-    <div class="form-card" style="border:2px dashed var(--gold)">
+    <div class="form-card" style="border:2px dashed var(--green)">
       <h3>Brochure aanvragen</h3>
       <p class="sub">Hier plaatst u in GHL het tweede natieve formulier. Velden: voornaam, e-mail, telefoon.</p>
       <div class="placeholder">GHL-formulier 2</div>
     </div>
   </div>
 </div>
-<!-- ===== EINDE FORMULIEREN, HIERNA BLOK B ===== -->
 
 <!-- BLOK B: in GHL DIRECT ONDER de twee natieve formulieren. -->
   <section class="section" style="padding-top:36px;padding-bottom:44px">
