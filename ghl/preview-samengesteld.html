@@ -218,6 +218,10 @@
   .vw-info>div{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:16px 18px;font-size:.95rem;line-height:1.5}
   .vw-info-k{display:block;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 
+  /* De vinkjeslijst staat in de donkere 17 oktober-sectie: daar geen witte kaart maar doorschijnend */
+  #verkoopweekend .fac li{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);color:#fff}
+  #verkoopweekend .fac li::before{color:var(--gold)}
+
   .mp-fb{width:100vw;max-width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow-x:hidden}
   .eu::before{content:"\20AC"}
   .dot::before{content:"\00B7"}
@@ -540,29 +544,14 @@
     </div>
   </section>
 
-<!-- ============================================================
-     EINDE BLOK A. In GHL hierna plaatsen, in deze volgorde:
-       1. Formulier "Aanmelding 17 oktober, Van der Valk Leusden"
-          (veld voor sessiekeuze: 11:00 / 14:00 / 16:00)
-       2. Formulier "Brochure aanvragen"
-       3. Custom Code blok B (blok-b-footer.html)
-     Alle knoppen scrollen naar #aanvragen. Rij op volle breedte, padding 0.
-     ============================================================ -->
+<!-- EINDE BLOK A. Hierna in GHL: 1) formulier aanmelding 17 oktober (met sessiekeuze
+     11:00/14:00/16:00), 2) formulier brochure, 3) Custom Code blok B.
+     Alle knoppen scrollen naar #aanvragen. Rij op volle breedte, padding 0. -->
 
-<!-- ===== HIER KOMEN IN GHL DE TWEE NATIEVE FORMULIEREN ===== -->
 <div class="container" style="padding-top:6px;padding-bottom:10px">
   <div class="forms">
-    <div class="form-card" style="border:2px dashed var(--green)">
-      <span class="badge">17 oktober</span>
-      <h3>Aanmelding 17 oktober</h3>
-      <p class="sub">Hier plaatst u in GHL het natieve formulier. Velden: voornaam, achternaam, e-mail, telefoon, sessie (11:00 / 14:00 / 16:00) en aantal personen.</p>
-      <div class="placeholder">GHL-formulier 1</div>
-    </div>
-    <div class="form-card" style="border:2px dashed var(--green)">
-      <h3>Brochure aanvragen</h3>
-      <p class="sub">Hier plaatst u in GHL het tweede natieve formulier. Velden: voornaam, e-mail, telefoon.</p>
-      <div class="placeholder">GHL-formulier 2</div>
-    </div>
+    <div class="form-card" style="border:2px dashed var(--green)"><span class="badge">17 oktober</span><h3>Aanmelding 17 oktober</h3><p class="sub">Hier komt in GHL het natieve formulier. Velden: voornaam, achternaam, e-mail, telefoon, sessie (11:00 / 14:00 / 16:00), aantal personen.</p><div class="placeholder">GHL-formulier 1</div></div>
+    <div class="form-card" style="border:2px dashed var(--green)"><h3>Brochure aanvragen</h3><p class="sub">Hier komt in GHL het tweede natieve formulier. Velden: voornaam, e-mail, telefoon.</p><div class="placeholder">GHL-formulier 2</div></div>
   </div>
 </div>
 
