@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Papillon met dalzicht op Village des Cigales: 7% netto, 5 jaar gegarandeerd | Maison Pure</title>
-<!-- VARIANT TRICOLORE: identieke tekst als index.html, alleen het kleurpalet verschilt (bleu-blanc-rouge in gastronomisch register). Bedoeld als A/B-test op palet. -->
 <meta name="description" content="Twee nieuwbouwwoningen Papillon met dalzicht op Village des Cigales (Lot). 7% netto per jaar, 5 jaar gegarandeerd door Maison Pure, na parkkosten en verhuurcommissie. Eigen grond, verhuur via FranceComfort, Nederlandstalig begeleid.">
 <meta property="og:title" content="Uw geld werkt harder in Frankrijk: 7% netto, 5 jaar gegarandeerd">
 <meta property="og:description" content="Papillon 10 en 11 met dalzicht op Village des Cigales. Eigen grond, volledig verhuurd via FranceComfort, vrijgesteld van Nederlandse box 3-belasting via het belastingverdrag.">
@@ -30,9 +29,9 @@
 
 <style>
   :root{
-    --cream:#FBF7F0; --green:#16305A; --gold:#C89B3C; --text:#17161A;
-    --lightgreen:#A9C0DC; --blue:#2C5490; --grey:#8A8F94; --greybg:#EEF0F2;
-    --red:#A4243B; --white:#FFFFFF; --muted:#585C63; --line:#E7DFD3;
+    --cream:#FAF9F7; --green:#4E5C4C; --gold:#E0A93B; --text:#2B2B2B;
+    --lightgreen:#A9B6A8; --blue:#234E70; --grey:#8A8F94; --greybg:#EEF0F2;
+    --red:#C8102E; --white:#FFFFFF; --muted:#5B6168; --line:#E6E2DA;
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -49,8 +48,6 @@
   @media(min-width:768px){.section{padding:80px 0}}
   .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
   .eyebrow.blue{color:var(--blue)}
-  .eyebrow::after{content:"";display:block;width:56px;height:3px;margin-top:8px;border-radius:2px;background:linear-gradient(90deg,var(--blue) 0 33.33%,#fff 33.33% 66.66%,var(--red) 66.66% 100%)}
-  .center .eyebrow::after{margin-left:auto;margin-right:auto}
   .lead{font-size:1.05rem;color:var(--muted);max-width:720px}
   .center{text-align:center}
   .center .lead{margin:0 auto 12px}
@@ -69,7 +66,7 @@
   .risk.light{color:rgba(255,255,255,.85)}
 
   /* Nav */
-  nav{position:sticky;top:0;z-index:50;background:rgba(22,48,90,.97);backdrop-filter:blur(6px);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(78,92,76,.97);backdrop-filter:blur(6px);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
   nav img{height:44px;width:auto}
   nav::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--blue) 0 33.33%,#fff 33.33% 66.66%,var(--red) 66.66% 100%)}
   nav .nav-cta{display:flex;gap:8px;align-items:center}
@@ -79,8 +76,8 @@
 
   /* Hero */
   .hero{position:relative;color:#fff;min-height:calc(100vh - 64px);display:flex;align-items:center;overflow:hidden}
-  .hero-bg{position:absolute;inset:0;background-image:url('https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e2526f98692bfd647ab8f.png');background-size:cover;background-position:center}
-  .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,20,42,.50) 0%,rgba(9,20,42,.74) 100%)}
+  .hero-bg{position:absolute;inset:0;background-image:url('https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e252cf98692bfd647ac23.png');background-size:cover;background-position:center}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,30,12,.55) 0%,rgba(20,30,12,.7) 100%)}
   .hero-inner{position:relative;z-index:2;padding:48px 0 40px}
   .hero h1{color:#fff;max-width:820px}
   .hero .sub{font-size:1.05rem;max-width:700px;margin:18px 0 22px;color:rgba(255,255,255,.95)}
@@ -106,7 +103,7 @@
   .vs-card{border-radius:14px;padding:26px 24px}
   .vs-nl{background:var(--greybg);color:var(--muted);border:1px solid #D9DDE1}
   .vs-nl h3{color:#4A5057}
-  .vs-fr{background:#fff;border:2px solid var(--red);box-shadow:0 10px 30px rgba(45,80,22,.08)}
+  .vs-fr{background:#fff;border:2px solid var(--gold);box-shadow:0 10px 30px rgba(45,80,22,.08)}
   .vs-fr h3{color:var(--green)}
   .vs-card .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-bottom:12px}
   .vs-nl .tag{background:#D9DDE1;color:#4A5057}
@@ -125,7 +122,7 @@
   .offer-card img{width:100%;height:220px;object-fit:cover}
   @media(min-width:768px){.offer-card img{height:260px}}
   .offer-body{padding:22px}
-  .offer-body .proof{margin-top:12px;padding:12px 14px;background:var(--cream);border-left:3px solid var(--red);font-size:.9rem;color:var(--muted)}
+  .offer-body .proof{margin-top:12px;padding:12px 14px;background:var(--cream);border-left:3px solid var(--gold);font-size:.9rem;color:var(--muted)}
   .offer-body .proof strong{color:var(--text)}
   .kavels{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
   @media(min-width:520px){.kavels{grid-template-columns:1fr 1fr}}
@@ -133,7 +130,7 @@
   .kavel .nr{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
   .kavel .price{font-family:Fraunces,serif;font-size:1.5rem;color:var(--green);margin:4px 0 2px}
   .kavel small{color:var(--muted);font-size:.82rem}
-  .badge{display:inline-block;background:var(--red);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:6px;margin-bottom:10px}
+  .badge{display:inline-block;background:var(--gold);color:var(--text);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:6px;margin-bottom:10px}
   .badge.blue{background:var(--blue);color:#fff}
 
   /* Stappen */
@@ -183,7 +180,7 @@
   /* Slot-CTA */
   .cta-final{position:relative;color:#fff;overflow:hidden}
   .cta-bg{position:absolute;inset:0;background-image:url('https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e252cf98692bfd647ac23.png');background-size:cover;background-position:center}
-  .cta-ov{position:absolute;inset:0;background:rgba(9,20,42,.80)}
+  .cta-ov{position:absolute;inset:0;background:rgba(20,30,12,.78)}
   .cta-final .container{position:relative;z-index:2}
   .cta-final h2{color:#fff}
   .forms{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
@@ -357,7 +354,7 @@
       </div>
 
       <div class="offer-card">
-        <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e252cf98692bfd647ac23.png" alt="Chalet op Village des Cigales in de avondzon" loading="lazy">
+        <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e2526bc0b1f5d2eb4685d.png" alt="Vakantiewoning met terras op Village des Cigales" loading="lazy">
         <div class="offer-body">
           <span class="badge">7% netto <span class="dot"></span> 5 jaar</span>
           <h3>Vijf jaar lang een vaste uitkering van 7% netto, gegarandeerd door Maison Pure</h3>
@@ -379,7 +376,7 @@
       </div>
 
       <div class="offer-card">
-        <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e252cf98692bfd647ac23.png" alt="Village des Cigales in de avondzon" loading="lazy">
+        <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e2526f98692bfd647ab8f.png" alt="Luchtfoto van Village des Cigales in het landschap" loading="lazy">
           <!-- BEWIJS NODIG: echte foto van de VDC-faciliteiten (zwembad met glijbaan, Bistrot du Parc, bar). De eerdere lounge/bar-collage is Domaine de Lanzac en is hier verwijderd. -->
         <div class="offer-body">
           <span class="badge">Zoover 9,7</span>
@@ -440,6 +437,22 @@
   </div>
 </section>
 
+<!-- SECTIE: Hoe wij over rendement praten | VARIABELE: kans van slagen (transparantie, Franse regels) -->
+<section class="section" id="rendement-uitleg" style="background:#fff">
+  <div class="container">
+    <p class="eyebrow">Transparant over cijfers</p>
+    <h2>Gerealiseerd, verwacht of gegarandeerd: wij maken het onderscheid</h2>
+    <p class="lead">Een rendementscijfer kan van alles betekenen. Daarom benoemen wij bij elk getal waar het vandaan komt. Alleen de garantie is een toezegging, al het andere is onderbouwing.</p>
+    <ul class="fac" style="margin-top:22px">
+      <li><strong>Gegarandeerd:</strong> 7% netto per jaar op kavel 10 en 11, vijf jaar lang, schriftelijk vastgelegd door Maison Pure. Dit is een toezegging.</li>
+      <li><strong>Gerealiseerd:</strong> wat er in het verleden werkelijk is uitgekeerd, uit de verhuurhistorie van FranceComfort.</li>
+      <li><strong>Verwacht:</strong> een onderbouwde inschatting op basis van die historie, de bezetting en de huidige huurprijzen.</li>
+      <li><strong>Commerciele prognose:</strong> een rekenvoorbeeld voor uw eigen situatie. Geen toezegging, wel een eerlijk beeld.</li>
+    </ul>
+    <p class="risk" style="margin-top:18px">Prognoses worden voor publicatie getoetst door onze finance- en beheerorganisatie. Rendement uit het verleden biedt geen garantie voor de toekomst, behalve waar dit schriftelijk is vastgelegd.</p>
+  </div>
+</section>
+
 <!-- SECTIE: Fiscale vergelijking (diepere bewijssectie) | VARIABELE: droomuitkomst + kans van slagen -->
 <section class="section fiscaal" id="fiscaal">
   <div class="container">
@@ -481,7 +494,7 @@
     <div class="park-media">
       <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e252cab262a1cfc3ae68e.png" alt="Vakantiewoning op Village des Cigales" loading="lazy">
       <!-- BEWIJS NODIG: VDC-faciliteitenfoto (zwembad met glijbaan / restaurant Bistrot du Parc). Collage van lounge en bar was Domaine de Lanzac. -->
-      <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a5e2526f98692bfd647ab8f.png" alt="Luchtfoto van Village des Cigales met het dal op de achtergrond" loading="lazy">
+      <img src="https://assets.cdn.filesafe.space/ogbyRxgEx1wtnWdZeDwe/media/6a918510058f231d6aea25d0.webp" alt="Vakantiewoning op Village des Cigales" loading="lazy">
     </div>
     <ul class="fac">
       <!-- BRON: FranceComfort parkpagina Village des Cigales, faciliteitenlijst (geraadpleegd 16-9-2026). Correcties t.o.v. oud materiaal: 3 zwembaden i.p.v. 1, "Bistrot du Parc" met -t, pizza wordt bezorgd (geen afhaal), uitzicht over de vallei (niet de heuvels), receptie Nederlandstalig. -->
@@ -494,6 +507,19 @@
       <li>Nederlandstalige beheerders en receptie met mini store</li>
       <li>Laadpalen voor elektrische auto's en gratis wifi</li>
     </ul>
+  </div>
+</section>
+
+<!-- SECTIE: Virtuele rondleiding | VARIABELE: kans van slagen + moeite (zien zonder te reizen) -->
+<section class="section" id="rondleiding" style="background:var(--cream)">
+  <div class="container center">
+    <p class="eyebrow">Virtuele rondleiding</p>
+    <h2>Loop alvast door de woning en over het park</h2>
+    <p class="lead">Binnenkort start u hier een rondleiding van 360 graden, opgenomen op het park zelf, met dronebeelden van de ligging. Zo ziet u de woning en het vergezicht voordat u ergens naartoe gaat.</p>
+    <div class="placeholder" style="max-width:840px;margin:24px auto 0;min-height:240px;display:flex;align-items:center;justify-content:center">
+      [VIRTUELE RONDLEIDING: embed hier de 360-tour]
+      <!-- BEWIJS NODIG: 360-opname (Insta360) plus dronebeelden, gehost op het Maison Pure-domein. Embed-URL hier plaatsen. -->
+    </div>
   </div>
 </section>
 
@@ -527,7 +553,7 @@
     <div class="advisor">
       <p class="role">Uw contactpersoon</p>
       <h3>Ruben, makelaar bij Maison Pure</h3>
-      <p>Maison Pure verkoopt Franse vakantiewoningen aan Nederlandse en Belgische investeerders en werkt samen met FranceComfort, een van de grootste Nederlandse verhuurorganisaties voor Franse vakantiewoningen. U krijgt een aanspreekpunt, van het eerste gesprek tot de eerste uitkering.</p>
+      <p>Maison Pure ontwikkelt en verkoopt Franse vakantiewoningen voor Nederlandse en Belgische investeerders. De verhuur ligt bij FranceComfort, een van de grootste Nederlandse verhuurorganisaties voor Franse vakantiehuizen: zij regelen de gasten, de schoonmaak en het onderhoud, zodat u er zelf niets aan hoeft te doen. U krijgt een aanspreekpunt, van het eerste gesprek tot de eerste uitkering.</p>
       <!-- BEWIJS NODIG: foto van Ruben en een korte, verifieerbare klantquote over Village des Cigales (met naam, plaats en jaar). De eerdere quote van een echtpaar uit Utrecht alleen gebruiken als hij toestemming heeft en over VDC gaat. -->
     </div>
   </div>
@@ -544,16 +570,14 @@
     </div>
   </section>
 
-<!-- EINDE BLOK A. Hierna in GHL: 1) formulier aanmelding 17 oktober (met sessiekeuze
+<!-- EINDE BLOK A. Hierna in GHL: 1) formulier aanmelding 17 oktober (sessiekeuze
      11:00/14:00/16:00), 2) formulier brochure, 3) Custom Code blok B.
-     Alle knoppen scrollen naar #aanvragen. Rij op volle breedte, padding 0. -->
+     Knoppen scrollen naar #aanvragen. Rij op volle breedte, padding 0. -->
 
-<div class="container" style="padding-top:6px;padding-bottom:10px">
-  <div class="forms">
-    <div class="form-card" style="border:2px dashed var(--green)"><span class="badge">17 oktober</span><h3>Aanmelding 17 oktober</h3><p class="sub">Hier komt in GHL het natieve formulier. Velden: voornaam, achternaam, e-mail, telefoon, sessie (11:00 / 14:00 / 16:00), aantal personen.</p><div class="placeholder">GHL-formulier 1</div></div>
-    <div class="form-card" style="border:2px dashed var(--green)"><h3>Brochure aanvragen</h3><p class="sub">Hier komt in GHL het tweede natieve formulier. Velden: voornaam, e-mail, telefoon.</p><div class="placeholder">GHL-formulier 2</div></div>
-  </div>
-</div>
+<div class="container" style="padding-top:6px;padding-bottom:10px"><div class="forms">
+  <div class="form-card" style="border:2px dashed var(--green)"><span class="badge">17 oktober</span><h3>Aanmelding 17 oktober</h3><p class="sub">Hier komt in GHL het natieve formulier. Velden: voornaam, achternaam, e-mail, telefoon, sessie (11:00 / 14:00 / 16:00), aantal personen.</p><div class="placeholder">GHL-formulier 1</div></div>
+  <div class="form-card" style="border:2px dashed var(--green)"><h3>Brochure aanvragen</h3><p class="sub">Hier komt in GHL het tweede natieve formulier. Velden: voornaam, e-mail, telefoon.</p><div class="placeholder">GHL-formulier 2</div></div>
+</div></div>
 
 <!-- BLOK B: in GHL DIRECT ONDER de twee natieve formulieren. -->
   <section class="section" style="padding-top:36px;padding-bottom:44px">
